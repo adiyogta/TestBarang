@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-
     private Button bTambah;
     private Button bLihat;
 
@@ -28,9 +27,8 @@ public class MainActivity extends AppCompatActivity {
         bLihat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(LihatBarang.getActIntent(MainActivity.this));
             }
         });
-
     }
 }
